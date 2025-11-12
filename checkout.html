@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إتمام الشراء - عالم الأجهزة الذكية</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>تأكيد الطلب والدفع</h1>
+        <p><center>الخطوة الأخيرة لاستلام طلبك</center></p>
+    </header>
+
+    <main class="products-grid-container">
+        <div style="max-width: 600px; margin: 20px auto; padding: 30px; background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <h2 style="color: #5d35a0; border-bottom: 2px solid #9c27b0; padding-bottom: 10px; margin-bottom: 20px;">بيانات الشحن وتأكيد المنتج</h2>
+            
+            <form id="checkout-form" style="display: flex; flex-direction: column; gap: 15px;">
+                
+                <div style="padding: 10px; background-color: #f4f4f9; border-radius: 5px;">
+                    <label for="product-name" style="font-weight: bold; color: #9c27b0;">المنتج المطلوب:</label>
+                    <input type="text" id="product-name" name="product-name" value="اسم المنتج يظهر تلقائياً هنا (مثل: Xiaomi 13 Pro)" readonly style="width: 100%; padding: 5px 0; border: none; background: none; font-weight: bold; color: #333; text-align: right;">
+                </div>
+                
+                <label for="full-name" style="font-weight: bold; color: #333;">الاسم بالكامل:</label>
+                <input type="text" id="full-name" name="full-name" required placeholder="ادخل اسمك بالكامل" style="padding: 12px; border: 1px solid #ccc; border-radius: 8px; text-align: right;">
+                
+                <label for="address" style="font-weight: bold; color: #333;">العنوان التفصيلي (المدينة - الشارع - رقم المنزل):</label>
+                <textarea id="address" name="address" required placeholder="ادخل العنوان بدقة لاستلام المنتج" style="padding: 12px; border: 1px solid #ccc; border-radius: 8px; text-align: right; height: 80px; resize: none;"></textarea>
+                
+                <label for="phone" style="font-weight: bold; color: #333;">رقم الهاتف (بما في ذلك كود مصر +20):</label>
+                <div style="display: flex; gap: 10px;">
+                    <input type="tel" id="phone" name="phone" required placeholder="مثال: 1105570723" pattern="[0-9]{10,}" style="flex-grow: 1; padding: 12px; border: 1px solid #ccc; border-radius: 8px; text-align: right;">
+                    <span style="padding: 12px; background-color: #eee; border: 1px solid #ccc; border-radius: 8px; font-weight: bold;">+20</span>
+                </div>
+                
+                <button type="submit" class="buy-now" style="margin-top: 20px;">تأكيد وطلب الشراء</button>
+            </form>
+            <a href="cart.html" class="add-to-cart" style="margin-top: 10px; text-align: center; border-color: #5d35a0; color: #5d35a0;">إلغاء والعودة للسلة</a>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        </footer>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item"><i class="fas fa-home"></i>الرئيسية</a>
+        <a href="phones.html" class="nav-item"><i class="fas fa-store"></i>المتجر</a>
+        <a href="cart.html" class="nav-item"><i class="fas fa-shopping-cart"></i>السلة</a>
+        <a href="account.html" class="nav-item"><i class="fas fa-user"></i>حسابي</a>
+        <a href="#" class="nav-item"><i class="fas fa-bars"></i>القائمة</a>
+    </nav>
+</body>
+</html>
